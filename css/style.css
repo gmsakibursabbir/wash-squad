@@ -1,0 +1,472 @@
+:root {
+  /* === COLORS === */
+  --color-dark: #1d2127;
+  --primary-color: #00a335;
+  --secondary-color: #e36159;
+  --tertiary-color: #2baab1;
+  --blue-color: #0047bb;
+  --dark-color: #000000;
+  --light-color: #ffffff;
+  --gray-color: #777777;
+  --dark-gray-color: #333333;
+  --text-black: #222529;
+
+  /* === FONT FAMILY === */
+  --playfair: "Playfair Display", serif;
+  --poppins: "Poppins", sans-serif;
+
+  --animation: 200ms ease;
+
+  /* === SPACING === */
+  --spacing-2: 2px;
+  --spacing-3: 3px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-26: 26px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-52: 52px;
+  --spacing-56: 56px;
+  --spacing-60: 60px;
+
+  /* === FONT SIZE === */
+  --font-size-10: 10px;
+  --font-size-11: 11px;
+  --font-size-12: 12px;
+  --font-size-13: 13px;
+  --font-size-14: 14.5px;
+  --font-size-16: 16px;
+  --font-size-17: 17px;
+  --font-size-18: 18px;
+  --font-size-20: 20px;
+  --font-size-24: 24px;
+  --font-size-34: 34px;
+  --font-size-36: 36.5px;
+  --font-size-44: 44px;
+  --font-size-56: 56px;
+}
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+/* === GLOBAL CSS START === */
+#discount,
+#social,
+#header,
+#footer {
+  overflow-x: hidden !important;
+  overflow-y: hidden;
+}
+
+/* h1 = 36px */
+h1 {
+  font-size: var(--font-size-36);
+  font-weight: 700;
+  line-height: 44px;
+  color: var(--dark-color);
+}
+
+/* h2 = 36px */
+h2 {
+  font-size: var(--font-size-36);
+  font-weight: 700;
+  line-height: 44px;
+  color: var(--dark-color);
+}
+
+/* h3 = 44px */
+h3 {
+  font-size: var(--font-size-44);
+  font-family: var(--poppins);
+  font-size: 44px;
+}
+
+/* h4 = 36.8px */
+h4 {
+  font-size: var(--font-size-36);
+  font-family: var(--poppins);
+  font-size: 36.8px;
+}
+
+/* h5 =  */
+h5 {
+  font-size: 16px;
+}
+
+/* h6 =  */
+h6 {
+  font-size: 16px;
+}
+
+/* p = 16px */
+p {
+  font-family: var(--poppins);
+  font-weight: 400;
+  font-size: var(--font-size-16);
+  line-height: 27px;
+  color: #000000;
+  margin-bottom: 0;
+}
+
+/* p10 = 10px */
+.p10 {
+  font-size: 10px;
+}
+
+/* p11 = 11px */
+.p11 {
+  font-size: 11px;
+  line-height: 10px;
+}
+/* p12 = 12px */
+.p12 {
+  font-size: 12px;
+}
+
+/* p13 = 13px */
+.p13 {
+  font-size: 13px;
+}
+
+/* p14 = 14px */
+.p14 {
+  font-size: var(--font-size-14);
+}
+
+/* p17 = 17px */
+.p17 {
+  font-size: 17px;
+}
+
+/* p18 = 18px */
+.p18 {
+  font-size: 18px;
+}
+
+/* p19 = 19px */
+.p19 {
+  font-size: 19px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* == BORDER == */
+.bottom__border {
+  position: relative;
+  margin-top: var(--spacing-30);
+  margin-bottom: var(--spacing-30) 30px;
+}
+
+.bottom__border::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+}
+
+.left__border {
+  position: relative;
+  margin-left: var(--spacing-30);
+}
+.left__border::before {
+  content: "";
+  position: absolute;
+  background-color: #e7e7e7 !important;
+  width: 1px;
+  height: 80%;
+  top: 10%;
+  left: -15px;
+}
+
+.left__border-two {
+  position: relative;
+
+  margin-left: 50px;
+}
+.left__border-two::before {
+  content: "";
+  position: absolute;
+  background-color: #e7e7e7 !important;
+  width: 1px;
+  height: 80%;
+  top: 10%;
+  left: -15px;
+}
+
+/* HEADING__WRAPPER */
+.heading__mt {
+  margin-top: var(--font-size-12);
+}
+.heading__mb {
+  margin-bottom: var(--spacing-32);
+}
+
+/* GLOBAL - COLOR */
+.sky:hover {
+  background-color: #3b5a9a;
+  color: var(--light-color);
+}
+
+.blue:hover {
+  background-color: #1aa9e1;
+  color: var(--light-color);
+}
+
+.red:hover {
+  background-color: #ff0000;
+  color: var(--light-color);
+}
+
+.mix:hover {
+  background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);
+  color: var(--light-color);
+}
+.gray {
+  background-color: var(--dark-gray-color);
+}
+
+.gray i {
+  color: var(--light-color);
+}
+
+/* === GLOBAL CSS END === */
+
+/* =================  BODY  ================= */
+
+/* === DISCOUNT START === */
+#discount {
+  background-color: var(--text-black);
+}
+
+.row__discount {
+  padding: 10px 0;
+}
+
+.discount__wrapper p {
+  font-size: var(--font-size-13);
+  font-family: var(--poppins);
+  line-height: 1.4;
+  text-align: center;
+  color: var(--light-color);
+  font-weight: 500;
+}
+.discount__wrapper p span {
+  font-weight: 700;
+}
+.discount__wrapper p a {
+  font-weight: 700;
+  color: var(--light-color);
+  transition: var(--animation);
+}
+
+.discount__wrapper p a:hover {
+  color: #ffffffab;
+}
+
+/* === DISCOUNT END === */
+
+/* === SOCIAL START === */
+
+#social {
+  border-bottom: 1px solid #e7e7e7 !important;
+}
+
+.row__social {
+  padding: 10px 0;
+}
+
+.social__delivery-box {
+  color: var(--dark-color);
+}
+
+.social__delivery-box p {
+  font-weight: 600;
+}
+
+.social__delivery-box p img {
+  width: 40px;
+  padding-right: 5px;
+}
+
+.social__media-box i {
+  font-size: 1rem;
+}
+
+.child--qns {
+  font-weight: 500;
+  font-size: 0.8125rem;
+  color: var(--dark-color);
+  transition: var(--animation);
+  margin-right: 10px;
+}
+
+.child--qns:hover {
+  color: var(--primary-color);
+}
+
+.qns__socail-box ion-icon {
+  font-size: 22px;
+  padding-right: 8px;
+}
+
+.media--box a i {
+  font-size: 18px;
+}
+
+.media--box a {
+  width: 40px;
+  height: 40px;
+  color: var(--dark-color);
+  border-radius: 100%;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  transition: var(--animation);
+  overflow: visible;
+  cursor: pointer;
+}
+
+/* === SOCIAL END === */
+
+/* === HEADER START === */
+
+.row__header {
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.logo__link img {
+  width: min(50vw, 400px);
+}
+
+.header__search {
+  border-radius: 5px;
+  font-family: var(--poppins);
+}
+
+.header__logo--box button {
+  background-color: transparent;
+  border: none;
+}
+.header__logo--box button i {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.offcanvas-header button {
+  border: none;
+  background-color: transparent;
+}
+
+.offcanvas-header button i {
+  font-size: 20px;
+}
+
+.input-group button {
+  background-color: var(--light-color);
+}
+
+.input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n + 3),
+.input-group:not(.has-validation)
+  > .form-floating:not(:last-child)
+  > .form-control,
+.input-group:not(.has-validation)
+  > .form-floating:not(:last-child)
+  > .form-select,
+.input-group:not(.has-validation)
+  > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(
+    .form-floating
+  ) {
+  border-right: none;
+  box-shadow: none;
+  border-radius: 5px 0 0 5px;
+}
+
+input[type="text"]::-webkit-input-placeholder {
+  font-size: 13px;
+  font-family: var(--poppins);
+  margin-bottom: 10px;
+}
+
+.call__action {
+  color: var(--text-black);
+  padding-right: 20px;
+}
+.call__action ion-icon {
+  font-size: 30px;
+  padding-left: 15px;
+  padding-right: 5px;
+}
+
+.call__content p:first-child {
+  font-weight: 500;
+  color: var(--gray-color);
+}
+.call__content p:last-child {
+  font-weight: 700;
+}
+
+/* === HEADER END === */
+
+/* === MAIN START === */
+
+.main__pera-wrapper {
+  text-wrap: balance;
+}
+
+.main__pera-wrapper {
+  padding-bottom: 20px;
+}
+
+.main__pera-wrapper p img {
+  width: 200px;
+  height: 150px;
+}
+.main__pera-wrapper p .left__float {
+  margin: 4px 24px 0 0;
+  float: left;
+}
+.main__pera-wrapper p .right__float {
+  margin: 4px 0 0 24px;
+  float: right;
+}
+
+/* === MAIN END === */
+
+/* === === REQUEST - MAIN START === === */
+#request__main{
+  background-color: var(--dark-color);
+  
+}
+
+.request__main-left{}
+
+
+/* === === REQUEST - MAIN END === === */
+/* === FOOTER START === */
+
+/* === FOOTER END === */
